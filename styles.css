@@ -552,5 +552,6 @@ p {
     background: var(--blue-400);
     padding: 25px;
     padding-top: 15px;
+    padding-bottom: 0;
     margin: auto;
 }
