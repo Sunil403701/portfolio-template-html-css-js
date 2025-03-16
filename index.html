@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+    <script src="=./scripts.js"></script>
+    <link rel="icon" type="image/jpg" href="./imgs/favicon.jpg">
+</head>
+<body>
+   <header>
+     <a herf="#" class="logo-holder">
+        <div class="logo">S</div>
+        <div class="logo-text">Portfolio Website</div>
+     </a>
+      <nav>
+           <ul id="menu" class="active">
+              <li>
+                   <a href="#">Home</a>
+              </li>
+              <li>
+                   <a href="#projects">Projects</a>
+              </li>
+              <li>
+                   <a href="#Contact Me">Contact Me</a>
+              </li>
+              <li>
+                  <a href="#video">Video Demo</a>
+              </li>
+              <li>
+               <a href="#site report" class="buttom">Site Report</a>
+           </li>
+           </ul>
+           <a href="#" class="mobile-toggle" onclick={toggleMobileMenu}>
+               <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                  </svg> 
+           </a>
+      </nav>
+   </header>
+   <main>
+     <section class="hero container">
+          <div class="hero-blue">
+               <div>
+                    <h1><small>Hi I'm</small>
+                        Sunil Yadav
+                    </h1>
+                    <p>
+                         Design and Developer in Northampton University who creates different content on Universityof Northampton App, websites and on youtube about HTML, CSS and Javascript. <span>
+                              I'm interested in AI topics which is why I also add things like ChatGPT into my projects these days.</span>
+                    </p>
+                    <div class="call-to-action">
+                         <a href="./Resume.pdf" class="buttom black">   
+                               View Resume
+                         </a>
+                         <a href="#" class="buttom white">
+                              Contact Me
+                         </a>
+                    </div>
+                    <div class="social-links">
+                         <a href="#">
+                              <img src="./imgs/github.png" alt="GitHub" width="48" />
+                              <a href="#">
+                                   <img src="./imgs/linkedin.png" alt="linkedIn" width="48" />
+                         </a>
+                    </div>
+               </div>
+          </div>
+          <div class="hero-yellow">
+               <img src="imgs/favicon.png" alt="Sunil Yadav" width="100%" />
+          </div>
+     </section>
+     <section class=" logos container">
+         <div class="marquee">
+               <div class="track">
+                    <img src="./imgs/azure.png" alt="Azure" width="128" />
+                    <img src="./imgs/css.png" alt="CSS" width="128" /> 
+                    <img src="./imgs/github.png" alt="GitHub" width="128" />
+                    <img src="./imgs/html.png" alt="HTML" width="128" />
+                    <img src="./imgs/javascript.png" alt="Javascript" width="128" /> 
+                    <img src="./imgs/linkedin.png" alt="linkedIn" width="128" /> 
+                    <img src="./imgs/nextjs.png" alt="Next JS" width="128" /> 
+                    <img src="./imgs/python.png" alt="Python" width="128" /> 
+                    <img src="./imgs/react.png" alt="React" width="128" /> 
+                    <img src="./imgs/vscode.png" alt="VS Code" width="128" /> 
+               </div>
+         </div>
+     </section>
+    <section id="projects" class="bento container">
+     <h2>
+          <small>
+               Previous
+          </small>
+          Completed Projects
+     </h2>
+     <div class="bento-gride">
+          <a href="#" class="bento-item">
+               <img src="./imgs/project1.png" alt="project1" width="100%" />
+          </a>
+          <a href="#" class="bento-item">
+               <img src="./imgs/project2.png" alt="project2" width="100%" />
+          </a>
+          <a href="#" class="bento-item">
+               <img src="./imgs/project3.png" alt="project3" width="100%" />
+          </a>
+          <a href="#" class="bento-item">
+               <img src="./imgs/project4.png" alt="project4" width="100%" />
+          </a>
+          <a href="#" class="bento-item">
+               <img src="./imgs/project5.png" alt="project5" width="100%" />
+          </a>
+          <a href="#" class="bento-item">
+               <img src="./imgs/project6.png" alt="project6" width="100%" />
+          </a>
+     </div>
+    </section>
+    <section class="chatbot container">
+          <h2>
+               <small>
+                    Talk to me
+               </small>
+               Chatbot
+          </h2>
+          <div class="chatbot-blue">
+               <div class="chat-info">
+                    <h3>Azure AI Chatbot</h3>
+                    <p>I've put together a chatbot here which knows all my skills, work experienceand and has a copy of my CV/Resume. You can use it to ask questions about me to get a better idea of who I am and what I've done. </p>
+                    <p>You can also download my resume here if you want to take a look of it. I'm currently looking for new opportunities so if you have a projectyou you think I'd be a good fit for, please get in touch!</p>
+                    <a href="./Resume.pdf" class="buttom black">Download Resume</a>
+               </div>
+               <div class="chat-box">
+                    <div class="scroll-area">
+                         <ul id="chat-log">
+                              <li>
+                                   <span class="avatar bot">
+                                        AI
+                                   </span>
+                                   <div class="message">
+                                        Hi, I'm a friendly chatbot that lets you interactive with this portfolio and cv. How can i help?
+                                   </div>
+                              </li>
+                              <li>
+                                   <span class="avatar user">
+                                        User
+                                   </span>
+                                   <div class="message">
+                                       I have a questionsto ask you about this resume.
+                                   </div>
+                              </li>
+                         </ul>
+                    </div>
+                    <div class="chat-message">
+                         <input type="text" placeholder="Hey Sunil, what skills are you best at?">
+                         <buttom class="buttom black">Send</buttom>
+                    </div>
+               </div>
+          </div>
+    </section>
+    <section id="Contact Me" class="contact Me">
+     <h1>Connect With Us</h1> 
+     <p>We would love to respond to your queries and help you succeed.<br> Feel free to get in touch with me.</p>
+     <div class="contact-box">
+          <div class="contact-left">
+               <h3>Sent your request</h3>
+               <form>
+                    <div class="input-row">
+                         <div class="input-row">
+                              <lebal>Name</label>
+                              <input type="text" placeholder="Sunil Yadav">
+                         </div>
+                         </div>
+                         <div class="input-row">
+                         <div class="input-group">
+                              <lebal>Phone</label>
+                              <input type="text" placeholder="+44 01234656789">
+                         </div>
+                         </div>
+                         <div class="input-row">
+                         <div class="input-group">
+                              <lebal>Email</label>
+                              <input type="text" placeholder="sunil@gmail.com">
+                         </div>
+                         <div class="input-group">
+                              <lebal>Subject</label>
+                              <input type="text" placeholder="Product Demo">
+                         </div>
+                    </div> 
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+
+                    <button type="submit" class="button">SEND</button>
+               </form>
+          </div>
+          <div class="contact-right">
+               <h3>Reach Me</h3>
+
+               <table>
+                    <tr>
+                         <td>Email</td>
+                         <td>contactme@gmail.com</td>
+                    </tr>
+                    <tr>
+                         <td>Phone</td>
+                         <td>+44 0123456789</td>
+                    </tr>
+                    <tr>
+                         <td>Address</td>
+                         <td>#NNN VV55 <br>Northampton <br>United Kingdom</td>
+                    </tr>
+               </table>
+          </div>
+     </div>
+</section>
+     <section id="video" class="video-demo">
+          <h2>Video Demo</h2>
+          <p>In this video I was explained about my portfolio. <br> Simply overall about Portfolio.</p>
+          <iframe id="kmsembed-0_yibel7kf" width=" 640" height="420" src="https://mymedia.northampton.ac.uk/embed/secure/iframe/entryId/0_yibel7kf/uiConfId/23458795/st/0" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Capture recording - March 16th 2025, 7:02:55 am"></iframe>
+     </section>
+   <section id="site report" class="site-report">
+     <h2>Site Report</h2>
+     <small>
+        About what challenges I had faced while making it?
+     </small>
+
+     <p>While working on my web development portfolio, I encountered several challenges that tested both my technical and design skills. Initially, structuring my HTML was tricky as I struggled to maintain proper semantic structure, ensuring accessibility and SEO best practices.
+        CSS styling was another hurdle, particularly with achieving consistent layouts across different browsers; flexbox and grid layouts often behaved unexpectedly, causing alignment issues. Making the site responsive was also challenging, especially when elements didn’t scale properly on smaller screens.
+        I faced difficulties adding interactive features using JavaScript, where event listeners sometimes failed to trigger or produced unexpected errors.
+          <br> Choosing the right design elements such as fonts and color schemes was equally challenging; I wanted a clean yet visually appealing look, and I drew inspiration from websites like Dribbble and Awwwards. Ensuring text readability while maintaining aesthetics required several adjustments. Validating my code using W3C's HTML and CSS validators highlighted issues like missing alt attributes, unclosed tags, and incorrect property values, which required careful corrections. Deploying the portfolio also had its share of setbacks; incorrect file paths caused some images and styles to break post-deployment, which I resolved by revising my project structure. Throughout the process, managing time effectively was difficult as I often spent too long fine-tuning minor design details. Despite these challenges, overcoming these obstacles significantly improved my coding skills and understanding of web development best practices.
+
+     </p>
+   </section>
+</main>
+</body>
+</html>
